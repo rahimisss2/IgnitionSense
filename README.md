@@ -33,7 +33,7 @@ This project integrates and references verified data points from the **NASA Phys
    ```
 2. Execute the application:
    ```bash
-   streamlit run main.py
+   streamlit run app.py
    ```
 
 ---
