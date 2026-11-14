@@ -51,8 +51,18 @@ with dashboard:
             help="Oxygen volume fraction in the illustrative atmosphere; not a generic oxidizer model.",
         )
         st.caption("15% minimum · 21% Earth reference · 40% maximum")
-        gravity = st.selectbox("Gravity Environment", list(GRAVITY_POINTS))
-        fuel = st.selectbox("Fuel/Material Type", list(FUEL_POINTS))
+        gravity = st.radio(
+            "Gravity Environment",
+            list(GRAVITY_POINTS),
+            key="gravity_environment",
+            help="Select one gravity environment. The filled circle marks your selection.",
+        )
+        fuel = st.radio(
+            "Fuel/Material Type",
+            list(FUEL_POINTS),
+            key="fuel_material_type",
+            help="Select one material. Run the assessment to apply your selections.",
+        )
         st.caption(
             "Other conditions are unspecified. Pressure, ventilation, ignition energy, "
             "geometry, and exact material chemistry are not modeled."
