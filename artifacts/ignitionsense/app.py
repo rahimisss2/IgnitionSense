@@ -1,3 +1,6 @@
+# IgnitionSense AI - NASA Space Apps Challenge 2026 (Johor Bahru)
+# SI/AI disclosure: code structure and documentation were developed
+# with assistance from generative AI tools (Replit Agent).
 """IgnitionSense: an educational microgravity combustion demonstrator."""
 
 import time
