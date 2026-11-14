@@ -2,7 +2,9 @@
 
 import time
 from datetime import datetime, timezone
+from pathlib import Path
 
+import pandas as pd
 import streamlit as st
 
 from risk_model import FUEL_POINTS, GRAVITY_POINTS, assess
@@ -29,8 +31,8 @@ st.caption(
 )
 st.divider()
 
-dashboard, history = st.tabs(
-    ["Risk Assessment", "Historical Space Fire Case Studies"]
+dashboard, history, logs = st.tabs(
+    ["Risk Assessment", "Historical Space Fire Case Studies", "NASA PSI Experimental Logs"]
 )
 
 with dashboard:
@@ -169,6 +171,35 @@ with dashboard:
 
 with history:
     render_case_studies()
+
+with logs:
+    st.subheader("NASA PSI Experimental Logs")
+    st.write(
+        "These illustrative logs demonstrate how filtered samples from the NASA "
+        "Physical Sciences Informatics (PSI) Combustion Science repository could "
+        "be displayed. The six rows were supplied for this demo and have not "
+        "been verified as actual NASA experimental records."
+    )
+    st.caption("Illustrative sample data · Not used to calculate the Fire Hazard Score")
+    data_path = Path(__file__).resolve().parents[2] / "nasa_data.csv"
+    try:
+        experimental_logs = pd.read_csv(data_path)
+    except (OSError, pd.errors.ParserError, pd.errors.EmptyDataError) as exc:
+        st.error(f"Unable to load nasa_data.csv: {exc}")
+    else:
+        st.dataframe(
+            experimental_logs,
+            hide_index=True,
+            width="stretch",
+            column_config={
+                "Experiment_ID": "Experiment ID",
+                "Oxygen_Pct": st.column_config.NumberColumn("Oxygen (%)", format="%d"),
+                "Flame_Spread_Rate_m_s": st.column_config.NumberColumn(
+                    "Flame spread rate (m/s)", format="%.3f"
+                ),
+                "Risk_Level": "Risk level",
+            },
+        )
 
 st.divider()
 render_references()

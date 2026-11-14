@@ -1,0 +1,7 @@
+Experiment_ID,Material,Oxygen_Pct,Gravity,Flame_Spread_Rate_m_s,Risk_Level
+FLEX-01,Solid Polymer,21,0g,0.012,Low
+FLEX-02,Solid Polymer,30,0g,0.045,Moderate
+BASS-01,Liquid Propellant,21,0g,0.085,Critical
+BASS-02,Electrical Insulation,35,0.16g,0.062,Critical
+FLEX-03,Electrical Insulation,21,0g,0.015,Low
+BASS-03,Liquid Propellant,40,0.38g,0.095,Critical
