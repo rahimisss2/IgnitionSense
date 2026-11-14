@@ -9,6 +9,8 @@
 
 In microgravity, flames behave drastically different from Earth—forming dim, slow-burning spherical shapes that are highly unpredictable. This system utilizes a local, transparent rule-based simulation engine to process environmental combustion data instantly without requiring active internet connectivity, guaranteeing critical safety metrics remain operational during deep space exploration.
 
+LIVE APP - https://ignition-sense-dashboard.replit.app
+
 ## 📊 Core Features
 - **Dynamic Risk Assessment:** Simulates fire hazard scores (0-100) based on localized environmental variables.
 - **Automated Safety Alerts:** Generates distinct visual error levels (Critical, Moderate, Low Risk) depending on computed flame propagation threats.
