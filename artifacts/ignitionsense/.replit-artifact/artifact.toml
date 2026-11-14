@@ -1,0 +1,23 @@
+kind = "web"
+previewPath = "/"
+title = "IgnitionSense"
+description = "Python Streamlit educational space-fire safety dashboard for the NASA Space Apps Flame in Freefall challenge, with illustrative risk assessments and historical case studies."
+version = "1.0.0"
+id = "artifacts/ignitionsense"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23436
+
+[services.development]
+run = "python run.py"
+
+[services.production]
+build = ["python", "-m", "compileall", "-q", "app.py", "research.py", "risk_model.py", "run.py"]
+run = "python run.py"
+
+[services.env]
+PORT = "23436"
+BASE_PATH = "/"

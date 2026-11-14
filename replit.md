@@ -1,8 +1,14 @@
-# [Project name]
+# IgnitionSense
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+Python Streamlit educational space-fire dashboard for the NASA Space Apps Challenge "Flame in Freefall".
 
 ## Run & Operate
+
+- `python artifacts/ignitionsense/run.py` — launch the Streamlit dashboard; the managed web workflow supplies its assigned port.
+- Python dependencies are declared in root `pyproject.toml` and locked in `uv.lock`.
+- Dashboard source: `artifacts/ignitionsense/app.py`; educational scoring: `risk_model.py`; case studies and NASA references: `research.py`.
+- The dark theme uses native Streamlit configuration; no custom CSS is needed.
+- Scores are hand-weighted demonstrations, not probabilities or NASA-validated predictions. No NASA datasets are ingested and no runtime AI service is called.
 
 - `pnpm --filter @workspace/api-server run dev` — run the API server (port 5000)
 - `pnpm run typecheck` — full typecheck across all packages

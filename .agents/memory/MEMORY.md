@@ -1,0 +1,1 @@
+- [IgnitionSense scope](ignitionsense-scope.md) — User chose Python Streamlit; preserve transparent educational scoring and NASA reference boundaries.
