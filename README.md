@@ -12,7 +12,7 @@ In microgravity, flames behave drastically different from Earth—forming dim, s
 ## 📊 Core Features
 - **Dynamic Risk Assessment:** Simulates fire hazard scores (0-100) based on localized environmental variables.
 - **Automated Safety Alerts:** Generates distinct visual error levels (Critical, Moderate, Low Risk) depending on computed flame propagation threats.
-- **Historical Space Fire Analysis:** Evaluates historical microgravity accidents (Apollo 1, Apollo 13, and the 1997 Mir Space Station fire) to contextualize safety boundaries.
+- **Historical Space Fire Analysis:** Evaluates historical microgravity accidents (1997 Mir Space Station fire) to contextualize safety boundaries.
 - **NASA PSI Data View:** Embeds filtered historical logs representing real microgravity combustion investigations.
 
 ## 💾 NASA Open Data Integration
