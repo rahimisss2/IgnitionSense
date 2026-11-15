@@ -13,6 +13,8 @@ LIVE APP - https://ignition-sense-dashboard.replit.app
 
 DEMO SLIDE - https://drive.google.com/file/d/1wnZRfZDUbF7LnltzonDMT4Yj1COPBpFK/view?usp=sharing
 
+DEMO VIDEO(UNDER 3 MINUTES) - https://drive.google.com/file/d/1IImxEZIxoabxgzpFLXum6nBzdOdzLoHW/view?usp=drivesdk
+
 ## 📊 Core Features
 - **Dynamic Risk Assessment:** Simulates fire hazard scores (0-100) based on localized environmental variables.
 - **Automated Safety Alerts:** Generates distinct visual error levels (Critical, Moderate, Low Risk) depending on computed flame propagation threats.
